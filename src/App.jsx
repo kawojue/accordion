@@ -1,9 +1,7 @@
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <p>Greetings - Hello, Wolrd!</p>
+      <p>Greetings - Hello, World!</p>
     </>
   )
 }
