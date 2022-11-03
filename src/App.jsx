@@ -1,8 +1,8 @@
 function App() {
   return (
-    <>
-      <p>Greetings - Hello, World!</p>
-    </>
+    <main className="card">
+
+    </main>
   )
 }
 

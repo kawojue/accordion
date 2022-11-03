@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind utilities;
 @tailwind components;
+
+#root {
+    @apply mt-20 mb-10 flex justify-center;
+}
+
+.trans-all-linear {
+    @apply transition-all duration-200 ease-linear;
+}
+
+.card {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+        rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    @apply flex gap-10 items-center px-5 py-8 rounded-md bg-white max-w-[900px] w-[95vw] trans-all-linear;
+}
