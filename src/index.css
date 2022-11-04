@@ -11,20 +11,44 @@
 }
 
 .card {
-    @apply grid gap-10 px-7 py-9 rounded-md bg-white max-w-[900px] w-[95vw] trans-all-linear;
+    @apply grid gap-8 px-7 py-9 rounded-md bg-white max-w-[900px] w-[90vw] trans-all-linear;
 }
 
 h3 {
     @apply capitalize text-lg text-pry-clr-1 font-medium tracking-widest
 }
 
-.cards {
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
-        rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+.cards-container {
+    @apply flex flex-col gap-5;
 }
 
-@media screen and (min-width: 900px) {
+.cards {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    @apply flex flex-col px-5 py-3 rounded-md gap-3;
+}
+
+.cards-quest {
+    @apply w-full flex justify-between gap-10 items-center;
+}
+
+.cards-quest h5 {
+    @apply text-[0.85rem] font-semibold tracking-wider leading-loose;
+}
+
+.icon-container {
+    @apply rounded-full py-2 px-3 text-pry-clr-2 font-extralight bg-pry-clr-3 cursor-pointer;
+}
+
+p {
+    @apply font-light text-[0.8rem]
+}
+
+@media screen and (min-width: 1000px) {
     .card {
         grid-template-columns: 250px 1fr;
+    }
+
+    p {
+        @apply text-[0.85rem]
     }
 }
