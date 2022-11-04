@@ -36,7 +36,7 @@ h3 {
 }
 
 .icon-container {
-    @apply rounded-full py-2 px-3 text-pry-clr-2 font-extralight bg-pry-clr-3 cursor-pointer;
+    @apply rounded-full p-2 text-pry-clr-2 font-extralight bg-pry-clr-3 cursor-pointer;
 }
 
 p {
