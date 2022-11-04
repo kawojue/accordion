@@ -1,19 +1,27 @@
+import { AiOutlineMinus, AiOutlinePlus } from 'react-icons/ai'
+
+
 const Faq = ({ faqs, open, setOpen }) => {
     return (
         <section className="cards-container">
-            {faqs.map((faq, index) => (
-                <article key={index} className="cards">
-                    <div class="cards-quest">
+            {faqs.map(faq => (
+                <article key={faq.id} className="cards">
+                    <div className="cards-quest">
                         <h5 className="md:text-[1.2rem] md:leading-normal">
                             {faq.quest}
                         </h5>
-                        <div className="icon-container">
-                            <i class="fa-solid fa-plus"></i>
+                        <div className="icon-container" onClick={() => setOpen(!open)}>
+                            {
+                                open ?
+                                    <AiOutlineMinus /> :
+                                    <AiOutlinePlus />
+                            }
                         </div>
                     </div>
-                    <p className="md:text-[0.9rem]">
-                        {faq.ans}
-                    </p>
+                    {open &&
+                        <p className="md:text-[0.9rem]">
+                            {faq.ans}
+                        </p>}
                 </article>
             ))}
         </section>
