@@ -11,11 +11,9 @@ const Faq = ({ faqs, open, setOpen }) => {
                             {faq.quest}
                         </h5>
                         <div className="icon-container" onClick={() => setOpen(!open)}>
-                            {
-                                open ?
-                                    <AiOutlineMinus /> :
-                                    <AiOutlinePlus />
-                            }
+                            {open ?
+                                <AiOutlineMinus /> :
+                                <AiOutlinePlus />}
                         </div>
                     </div>
                     {open &&
