@@ -1,10 +1,7 @@
-import data from './data'
-import { useState } from 'react'
+import faqs from './data'
 import Faq from "./components/Faq"
 
 function App() {
-
-  const [faqs, setFaqs] = useState(data)
 
   return (
     <main className="card">

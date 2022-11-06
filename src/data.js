@@ -1,4 +1,4 @@
-const data = [
+const faqs = [
     {
         id: 1,
         quest: "Do I have to allow the use of cookes?",
@@ -26,4 +26,4 @@ const data = [
     }
 ]
 
-export default data
+export default faqs
